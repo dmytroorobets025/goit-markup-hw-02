@@ -1,0 +1,99 @@
+body {
+  background-color: #ffffff;
+  color: #757575;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ШАПКА */
+
+.logo-left {
+  color: #2196f3;
+}
+
+.logo {
+  color: #000000;
+}
+
+.site-nav {
+  color: #212121;
+}
+
+.auth-nav {
+  color: #757575;
+}
+
+.page-header :hover,
+:focus {
+  color: #2196f3;
+}
+
+/* Добавляє заголовкам стиль */
+
+h1,
+h2,
+h3 {
+  color: #212121;
+}
+
+/* Секція 1 */
+
+.hero {
+  background-color: #2f303a;
+}
+
+.hero-txt {
+  color: #ffffff;
+}
+
+.hero-button {
+  background-color: #2196f3;
+}
+
+.hero-button-txt {
+  color: #ffffff;
+}
+
+/* Секція 2 */
+
+.team {
+  background-color: #f5f4fa;
+}
+
+/* Секція 3 */
+
+/* Підвал */
+
+.footer {
+  background-color: #2f303a;
+}
+
+.logo-footer {
+  color: #ffffff;
+}
+
+.adress-sity {
+  color: #ffffff;
+}
+
+.mail,
+.telf {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer :hover,
+:focus {
+  color: #2196f3;
+}
+
+/* колір основного тексту color: #757575 */
+
+/* колір заголовків color: #212121 */
+
+/* колір логотипу (ліва сторона) color: #2196F3 (права сторона) color: #000000  в підвалі (права сторона) color: #FFFFFF */
+
+/* колір при наведенні (акцнет) color: #2196F3 */
+
+/* додатковий колір color: #FFFFFF */ ;
