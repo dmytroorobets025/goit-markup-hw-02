@@ -1,33 +1,38 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+}
+
 body {
   background-color: #ffffff;
   color: #757575;
 }
 
-ul {
-  list-style: none;
-}
-
 /* ШАПКА */
 
 .logo-left {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .logo {
   color: #000000;
 }
 
-.site-nav {
-  color: #212121;
+.site-nav.link.current {
+  color: var(--title-text-color);
 }
 
-.auth-nav {
-  color: #757575;
+/* .auth-nav {
+} для розташування */
+
+.contact-link {
+  color: var(--primary-text-color);
 }
 
 .page-header :hover,
 :focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* Добавляє заголовкам стиль */
@@ -35,7 +40,7 @@ ul {
 h1,
 h2,
 h3 {
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 /* Секція 1 */
@@ -49,7 +54,7 @@ h3 {
 }
 
 .hero-button {
-  background-color: #2196f3;
+  background-color: var(--accent-color);
 }
 
 .hero-button-txt {
@@ -58,11 +63,13 @@ h3 {
 
 /* Секція 2 */
 
+/* Секція 3 */
+
+/* Секція 4 "Team" */
+
 .team {
   background-color: #f5f4fa;
 }
-
-/* Секція 3 */
 
 /* Підвал */
 
@@ -85,7 +92,11 @@ h3 {
 
 .footer :hover,
 :focus {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+
+ul {
+  list-style: none;
 }
 
 /* колір основного тексту color: #757575 */
