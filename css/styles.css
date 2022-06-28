@@ -7,20 +7,46 @@
 body {
   background-color: #ffffff;
   color: #757575;
+  font-family: Roboto, sans-serif;
 }
 
 /* ШАПКА */
 
+header :hover,
+:focus {
+  background-color: #ffffff;
+  color: var(--accent-color);
+}
+
 .logo-left {
   color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1, 19;
+  letter-spacing: 0.03em;
 }
 
 .logo {
   color: #000000;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1, 19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
-.site-nav.link.current {
+.link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.02em;
+}
+
+nav li a {
   color: var(--title-text-color);
+  text-decoration: none;
 }
 
 /* .auth-nav {
@@ -28,6 +54,11 @@ body {
 
 .contact-link {
   color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .page-header :hover,
@@ -43,6 +74,10 @@ h3 {
   color: var(--title-text-color);
 }
 
+button {
+  cursor: pointer;
+}
+
 /* Секція 1 */
 
 .hero {
@@ -51,19 +86,55 @@ h3 {
 
 .hero-txt {
   color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1, 36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .hero-button {
   background-color: var(--accent-color);
-}
-
-.hero-button-txt {
   color: #ffffff;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1, 9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 /* Секція 2 */
 
+.about-us {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.about-us-txt {
+  font-size: 14px;
+  line-height: 1, 7;
+  letter-spacing: 0.03em;
+}
+
 /* Секція 3 */
+
+.occupation {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1, 16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 
 /* Секція 4 "Team" */
 
@@ -71,32 +142,115 @@ h3 {
   background-color: #f5f4fa;
 }
 
+.workers {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1, 2;
+}
+
+.profession {
+  font-size: 16px;
+  line-height: 1, 2;
+}
+
 /* Підвал */
 
 .footer {
   background-color: #2f303a;
+  font-family: Roboto, sans-serif;
 }
 
 .logo-footer {
   color: #ffffff;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1, 19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 .adress-sity {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1, 7;
+  letter-spacing: 0.03em;
+  text-decoration: none;
   color: #ffffff;
 }
 
 .mail,
 .telf {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1, 7;
+  letter-spacing: 0.03em;
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .footer :hover,
 :focus {
+  background-color: #2f303a;
   color: var(--accent-color);
 }
 
 ul {
   list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* PAGE #-2 */
+
+.bgr-of-buttons {
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.list-of-buttons {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1, 6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.list-of-buttons :hover,
+:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+.titles-of-works {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2, 3;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.paragraphs-of-works {
+  font-size: 16px;
+  line-height: 1, 9;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 
 /* колір основного тексту color: #757575 */
