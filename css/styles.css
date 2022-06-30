@@ -10,22 +10,17 @@ body {
   color: #757575;
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+  font-size: 14px;
 }
 
 /* ШАПКА */
-
-header :hover,
-:focus {
-  background-color: var(--color-white);
-  color: var(--accent-color);
-}
 
 .logo-left {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1, 19;
+  line-height: 1.19;
 }
 
 .logo {
@@ -33,37 +28,46 @@ header :hover,
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1, 19;
+  line-height: 1.19;
   text-decoration: none;
 }
 
 .link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1, 14;
-  letter-spacing: 0.02em;
-}
-
-nav li a {
   color: var(--title-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   text-decoration: none;
 }
 
-/* .auth-nav {
-} для розташування */
+.site-nav :focus {
+  background-color: var(--color-white);
+  color: var(--accent-color);
+}
+
+.site-nav :hover {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.auth-nav :focus {
+  background-color: var(--color-white);
+  color: var(--accent-color);
+}
+
+.auth-nav :hover {
+  color: var(--accent-color);
+}
 
 .contact-link {
   color: var(--primary-text-color);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-}
-
-.page-header :hover,
-:focus {
-  color: var(--accent-color);
 }
 
 /* Добавляє заголовкам стиль */
@@ -88,7 +92,7 @@ button {
   color: var(--color-white);
   font-weight: 900;
   font-size: 44px;
-  line-height: 1, 36;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -101,7 +105,7 @@ button {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1, 9;
+  line-height: 1.9;
   display: flex;
   align-items: center;
   text-align: center;
@@ -113,23 +117,19 @@ button {
 /* Секція 2 */
 
 .about-us {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   text-transform: uppercase;
 }
 
 .about-us-txt {
-  font-size: 14px;
-  line-height: 1, 7;
+  line-height: 1.7;
 }
 
 /* Секція 3 */
 
-.occupation {
-  font-weight: 700;
+.section-title {
   font-size: 36px;
-  line-height: 1, 16;
+  line-height: 1.16;
   text-align: center;
 }
 
@@ -142,20 +142,18 @@ button {
 .workers {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 2;
+  line-height: 1.2;
 }
 
 .profession {
   font-size: 16px;
-  line-height: 1, 2;
+  line-height: 1.2;
 }
 
 /* Підвал */
 
 .footer {
-  background-color: #2f303a;
-  font-family: Roboto, sans-serif;
-  letter-spacing: 0.03;
+  background: #2f303a;
 }
 
 .logo-footer {
@@ -163,39 +161,36 @@ button {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1, 19;
+  line-height: 1.19;
   text-decoration: none;
 }
 
-.adress-sity {
-  font-family: Roboto, sans-serif;
+.address-sity {
   font-style: normal;
-  font-size: 14px;
-  line-height: 1, 7;
+  line-height: 1.7;
   text-decoration: none;
   color: var(--color-white);
 }
 
-.mail,
-.telf {
-  font-family: Roboto, sans-serif;
+.contacts {
   font-style: normal;
-  font-size: 14px;
-  line-height: 1, 7;
+  line-height: 1.7;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer :hover,
+.contacts-studio :hover,
 :focus {
   background-color: #2f303a;
   color: var(--accent-color);
 }
 
+/* Прибирає список з "li" */
 ul {
   list-style: none;
 }
 
+/* Скриті заголовки */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -220,28 +215,36 @@ ul {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 6;
+  line-height: 1.6;
   text-align: center;
-  color: #212121;
+  color: var(--title-text-color);
 }
 
-.list-of-buttons :hover,
-:focus {
+.bgr-of-buttons :hover {
+  background-color: var(--accent-color);
+  color: var(--color-white);
+}
+
+.buttons :focus {
+  background-color: var(--accent-color);
+  color: var(--color-white);
+}
+
+.buttons .current {
   background-color: var(--accent-color);
   color: var(--color-white);
 }
 
 .titles-of-works {
-  font-weight: 700;
   font-size: 18px;
-  line-height: 2, 3;
+  line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
 
 .paragraphs-of-works {
   font-size: 16px;
-  line-height: 1, 9;
+  line-height: 1.9;
   color: var(--primary-text-color);
 }
 
