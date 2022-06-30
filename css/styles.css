@@ -2,19 +2,21 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --color-white: #ffffff;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--color-white);
   color: #757575;
   font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
 
 /* ШАПКА */
 
 header :hover,
 :focus {
-  background-color: #ffffff;
+  background-color: var(--color-white);
   color: var(--accent-color);
 }
 
@@ -24,7 +26,6 @@ header :hover,
   font-weight: 700;
   font-size: 26px;
   line-height: 1, 19;
-  letter-spacing: 0.03em;
 }
 
 .logo {
@@ -33,7 +34,6 @@ header :hover,
   font-weight: 700;
   font-size: 26px;
   line-height: 1, 19;
-  letter-spacing: 0.03em;
   text-decoration: none;
 }
 
@@ -85,7 +85,7 @@ button {
 }
 
 .hero-txt {
-  color: #ffffff;
+  color: var(--color-white);
   font-weight: 900;
   font-size: 44px;
   line-height: 1, 36;
@@ -96,7 +96,7 @@ button {
 
 .hero-button {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--color-white);
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -116,14 +116,12 @@ button {
   font-weight: 700;
   font-size: 14px;
   line-height: 1, 14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .about-us-txt {
   font-size: 14px;
   line-height: 1, 7;
-  letter-spacing: 0.03em;
 }
 
 /* Секція 3 */
@@ -133,7 +131,6 @@ button {
   font-size: 36px;
   line-height: 1, 16;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 /* Секція 4 "Team" */
@@ -158,15 +155,15 @@ button {
 .footer {
   background-color: #2f303a;
   font-family: Roboto, sans-serif;
+  letter-spacing: 0.03;
 }
 
 .logo-footer {
-  color: #ffffff;
+  color: var(--color-white);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1, 19;
-  letter-spacing: 0.03em;
   text-decoration: none;
 }
 
@@ -175,9 +172,8 @@ button {
   font-style: normal;
   font-size: 14px;
   line-height: 1, 7;
-  letter-spacing: 0.03em;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .mail,
@@ -186,7 +182,6 @@ button {
   font-style: normal;
   font-size: 14px;
   line-height: 1, 7;
-  letter-spacing: 0.03em;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -220,7 +215,6 @@ ul {
   background: #f5f4fa;
   border-radius: 4px;
 }
-
 .list-of-buttons {
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -228,14 +222,13 @@ ul {
   font-size: 16px;
   line-height: 1, 6;
   text-align: center;
-  letter-spacing: 0.03em;
   color: #212121;
 }
 
 .list-of-buttons :hover,
 :focus {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .titles-of-works {
@@ -249,7 +242,6 @@ ul {
 .paragraphs-of-works {
   font-size: 16px;
   line-height: 1, 9;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
